@@ -4,220 +4,252 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transformations</title>
+    <style>
+      * {
+          font-family: Helvetica, sans-serif;
+          color: rgb(209, 209, 209);
+      }
+
+      body {
+          background-image: url("img/Site-background-dark.webp");
+      }
+
+      .logo_text {
+          text-decoration: none;
+      }
+
+      .logo_text :hover{
+          text-decoration: dashed white;
+      }
+
+      main {
+          min-height: calc(100vh - 10px - 160px);
+          background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      footer {
+          background-color: black;
+          margin-top: 0;
+          margin-bottom: -10px;
+          padding-bottom: 5px;
+          height: 4em;
+          text-align: center;
+      } 
+  </style>
 </head>
 <body>
-
-<section id="transformations">
-    <h2>Transformations</h2>
-    <p>Transformations alter Isaac's appearance and grant him special abilities.</p>
-    <p>A transformation occurs when obtaining at least three different items from a particular set of items. These collectibles always share a particular theme that corresponds with the transformation.</p>
-    
-    <h3>Contents</h3>
-    <ul>
-        <li><a href="#transformationSets">Transformation Sets</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#notes">Notes</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#trivia">Trivia</a></li>
-        <li><a href="#references">References</a></li>
-    </ul>
-    
-    <h3 id="transformationSets">Transformation Sets</h3>
-    <p>The following are the known transformations:</p>
-    <table border="1">
-        <thead>
-          <tr>
-            <th>ID #</th>
-            <th>Name</th>
-            <th>Appearance</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>0</td>
-            <td>Guppy</td>
-            <td>
-              <img src="guppy.png" alt="Guppy">
-            </td>
-            <td>
-              🕱 Grants flight and spawns a Blue Fly each time a tear hits an enemy.<br>
-              <strong>DLC:</strong> Grants flight and adds a 66% chance to spawn a Blue Fly when a tear hits an enemy.
-            </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Beelzebub</td>
-            <td>
-              <img src="beelzebub.png" alt="Beelzebub">
-            </td>
-            <td>
-              Grants flight. Converts small enemy flies into Blue Flies.<br>
-              <strong>DLC:</strong> Larger flies become friendly and follow Isaac between rooms.
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Fun Guy</td>
-            <td>
-              <img src="funguy.png" alt="Fun Guy">
-            </td>
-            <td>
-              <strong>DLC:</strong> +1 Red Heart Container.
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Seraphim</td>
-            <td>
-              <img src="seraphim.png" alt="Seraphim">
-            </td>
-            <td>
-              <strong>DLC:</strong> Grants flight and gives +3 <img src="soulheart.png" alt="Soul Heart"> Soul Hearts.
-            </td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Bob</td>
-            <td>
-              <img src="bob.png" alt="Bob">
-            </td>
-            <td>
-              <strong>DLC:</strong> Isaac leaves a trail of green poisonous creep as he walks that deals 6 damage per second.
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Spun</td>
-            <td>
-              <img src="spun.png" alt="Spun">
-            </td>
-            <td>
-              <strong>DLC:</strong> Gives +2 damage and +0.15 speed, and spawns a random pill upon transformation.
-            </td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Yes Mother?</td>
-            <td>
-              <img src="yesmother.png" alt="Yes Mother?">
-            </td>
-            <td>
-              <strong>DLC:</strong> Isaac gains a stationary knife that trails directly behind him. It synergizes like <img src="momsknife.png" alt="Mom's Knife"> Mom's Knife would.
-            </td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Conjoined</td>
-            <td>
-              <img src="conjoined.png" alt="Conjoined">
-            </td>
-            <td>
-              <strong>DLC:</strong> Adds two tumors that fire diagonally from Isaac's head. -0.3 Damage, -0.3 Tears.
-            </td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>Leviathan</td>
-            <td>
-              <img src="leviathan.png" alt="Leviathan">
-            </td>
-            <td>
-              <strong>DLC:</strong> Grants flight and gives +2 <img src="blackheart.png" alt="Black Heart"> Black Hearts.
-            </td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>Oh Crap</td>
-            <td>
-              <img src="ohcrap.png" alt="Oh Crap">
-            </td>
-            <td>
-              <strong>DLC:</strong> Whenever a pile of poop is destroyed, restores half of a red heart.
-            </td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Bookworm</td>
-            <td>
-              <img src="bookworm.png" alt="Bookworm">
-            </td>
-            <td>
-              <strong>DLC:</strong> Roughly 25% of the time, Isaac shoots an extra tear, like <img src="20-20.png" alt="20/20"> 20/20.
-            </td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>Adult</td>
-            <td>
-              <img src="adult.png" alt="Adult">
-            </td>
-            <td>
-              <strong>DLC:</strong> +1 Red Heart Container.
-            </td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>Spider Baby</td>
-            <td>
-              <img src="spiderbaby.png" alt="Spider Baby">
-            </td>
-            <td>
-              <strong>DLC:</strong> Spawns a spider familiar that applies random status effects to enemies it comes in contact with.
-            </td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>Stompy</td>
-            <td>
-              <img src="stompy.png" alt="Stompy">
-            </td>
-            <td>
-              <strong>DLC:</strong> Taking damage has a chance to spawn rock waves.<br>
-              Isaac can break obstacles by walking over them.
-            </td>
-          </tr>
-          <tr>
-            <td>n/a</td>
-            <td>Super Bum</td>
-            <td>
-              <img src="superbum.png" alt="Super Bum">
-            </td>
-            <td>
-              <strong>DLC:</strong> Replaces <img src="bumfriend.png" alt="Bum Friend"> Bum Friend, <img src="darkbum.png" alt="Dark Bum"> Dark Bum, and <img src="keybum.png" alt="Key Bum"> Key Bum with Super Bum. This bum collects any of the other beggars' pickups, and offers twice the rewards.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      
-    
-    <h3 id="requirements">Requirements</h3>
-    <p>To achieve a transformation, Isaac must obtain at least three different items from a specific set related to the transformation. Each set has its unique theme and effects.</p>
-    
-    <h3 id="notes">Notes</h3>
-    <ul>
-        <li>Transformations generally enhance Isaac’s abilities or change his appearance.</li>
-        <li>Some transformations are restricted to specific versions of the game, such as Rebirth, Afterbirth †, or Repentance.</li>
-    </ul>
-    
-    <h3 id="gallery">Gallery</h3>
-    <div class="gallery">
-        <!-- Example images, replace with actual images -->
-        <img src="example1.jpg" alt="Transformation Example 1">
-        <img src="example2.jpg" alt="Transformation Example 2">
-    </div>
-    
-    <h3 id="trivia">Trivia</h3>
-    <ul>
-        <li>Transformations provide Isaac with different visual and gameplay changes.</li>
-        <li>Some transformations require specific combinations of items, making them challenging to obtain.</li>
-    </ul>
-    
-    <h3 id="">References</h3>
-    <ul>
-        <li><a href="https://bindingofisaac.fandom.com/wiki/Transformations" target="_blank">Binding of Isaac Wiki: Transformations</a></li>
-    </ul>
-</section>
-
+  <header class="logo">
+    <a href="index.html">
+        <img src="img/IsaacLogo.webp" alt="The Binding of Isaac:Rebirth Wiki">
+    </a>
+    <a href="index.html" class="logo_text">The Binding of Isaac:Rebirth Wiki</a>
+  </header>
+  <main>
+    <section id="transformations">
+      <h2>Transformations</h2>
+      <p>Transformations alter Isaac's appearance and grant him special abilities.</p>
+      <p>A transformation occurs when obtaining at least three different items from a particular set of items. These collectibles always share a particular theme that corresponds with the transformation.</p>
+    </section>
+    <section>
+      <h3>Contents</h3>
+      <ul>
+          <li><a href="#transformationSets">Transformation Sets</a></li>
+          <li><a href="#requirements">Requirements</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#trivia">Trivia</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3 id="transformationSets">Transformation Sets</h3>
+      <p>The following are the known transformations:</p>
+      <table border="1">
+          <thead>
+            <tr>
+              <th>ID #</th>
+              <th>Name</th>
+              <th>Appearance</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>Guppy</td>
+              <td>
+                <img src="img/Transformations/Guppy_appearance.webp" alt="Guppy">
+              </td>
+              <td>
+                🕱 Grants flight and spawns a Blue Fly each time a tear hits an enemy.<br>
+                <strong>DLC:</strong> Grants flight and adds a 66% chance to spawn a Blue Fly when a tear hits an enemy.
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Beelzebub</td>
+              <td>
+                <img src="img/Transformations/Beelzebub_appearance.webp" alt="Beelzebub">
+              </td>
+              <td>
+                Grants flight. Converts small enemy flies into Blue Flies.<br>
+                <strong>DLC:</strong> Larger flies become friendly and follow Isaac between rooms.
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Fun Guy</td>
+              <td>
+                <img src="img/Transformations/Fun_Guy_appearance.webp" alt="Fun Guy">
+              </td>
+              <td>
+                <strong>DLC:</strong> +1 Red Heart Container.
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Seraphim</td>
+              <td>
+                <img src="img/Transformations/Seraphim_appearance.webp" alt="Seraphim">
+              </td>
+              <td>
+                <strong>DLC:</strong> Grants flight and gives +3 <img src="img/Hearts/Soul_Heart.webp" alt="Soul Heart"> Soul Hearts.
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Bob</td>
+              <td>
+                <img src="img/Transformations/Bob_appearance.webp" alt="Bob">
+              </td>
+              <td>
+                <strong>DLC:</strong> Isaac leaves a trail of green poisonous creep as he walks that deals 6 damage per second.
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Spun</td>
+              <td>
+                <img src="img/Transformations/Spun_appearance.webp" alt="Spun">
+              </td>
+              <td>
+                <strong>DLC:</strong> Gives +2 damage and +0.15 speed, and spawns a random pill upon transformation.
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Yes Mother?</td>
+              <td>
+                <img src="img/Transformations/Yes_Mother__appearance.webp" alt="Yes Mother?">
+              </td>
+              <td>
+                <strong>DLC:</strong> Isaac gains a stationary knife that trails directly behind him. It synergizes like <img src="img/Collectibles/Mom's_Knife_icon.webp" alt="Mom's Knife"> Mom's Knife would.
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Conjoined</td>
+              <td>
+                <img src="img/Transformations/Conjoined_appearance.webp" alt="Conjoined">
+              </td>
+              <td>
+                <strong>DLC:</strong> Adds two tumors that fire diagonally from Isaac's head. -0.3 Damage, -0.3 Tears.
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Leviathan</td>
+              <td>
+                <img src="img/Transformations/Leviathan_appearance.webp" alt="Leviathan">
+              </td>
+              <td>
+                <strong>DLC:</strong> Grants flight and gives +2 <img src="img/Hearts/Black_Heart.webp" alt="Black Heart"> Black Hearts.
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Oh Crap</td>
+              <td>
+                <img src="img/Transformations/Oh_Crap_appearance.webp" alt="Oh Crap">
+              </td>
+              <td>
+                <strong>DLC:</strong> Whenever a pile of poop is destroyed, restores half of a red heart.
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Bookworm</td>
+              <td>
+                <img src="img/Transformations/Bookworm_appearance.webp" alt="Bookworm">
+              </td>
+              <td>
+                <strong>DLC:</strong> Roughly 25% of the time, Isaac shoots an extra tear, like <img src="img/Collectibles/20_20_icon.webp" alt="20/20"> 20/20.
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Adult</td>
+              <td>
+                <img src="img/Transformations/Adult_appearance.webp" alt="Adult">
+              </td>
+              <td>
+                <strong>DLC:</strong> +1 Red Heart Container.
+              </td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Spider Baby</td>
+              <td>
+                <img src="img/Transformations/Spider_Baby_appearance.webp" alt="Spider Baby">
+              </td>
+              <td>
+                <strong>DLC:</strong> Spawns a spider familiar that applies random status effects to enemies it comes in contact with.
+              </td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Stompy</td>
+              <td>
+                <img src="img/Characters/Isaac_appearance.webp" alt="Stompy">
+              </td>
+              <td>
+                <strong>DLC:</strong> Taking damage has a chance to spawn rock waves.<br>
+                Isaac can break obstacles by walking over them.
+              </td>
+            </tr>
+            <tr>
+              <td>n/a</td>
+              <td>Super Bum</td>
+              <td>
+                <img src="img/Transformations/Super_Bum_appearance.webp" alt="Super Bum">
+              </td>
+              <td>
+                <strong>DLC:</strong> Replaces <img src="img/Collectibles/Bum_Friend_icon.webp" alt="Bum Friend"> Bum Friend, <img src="img/Collectibles/Dark_Bum_icon.webp" alt="Dark Bum"> Dark Bum, and <img src="img/Collectibles/Key_Bum_icon.webp" alt="Key Bum"> Key Bum with Super Bum. This bum collects any of the other beggars' pickups, and offers twice the rewards.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </section>
+    <section>
+      <h3 id="requirements">Requirements</h3>
+      <p>To achieve a transformation, Isaac must obtain at least three different items from a specific set related to the transformation. Each set has its unique theme and effects.</p>
+      <h3 id="notes">Notes</h3>
+      <ul>
+          <li>Transformations generally enhance Isaac's abilities or change his appearance.</li>
+          <li>Some transformations are restricted to specific versions of the game, such as Rebirth, Afterbirth †, or Repentance.</li>
+      </ul>
+    </section>
+    <section>
+      <h3 id="trivia">Trivia</h3>
+      <ul>
+          <li>Transformations provide Isaac with different visual and gameplay changes.</li>
+          <li>Some transformations require specific combinations of items, making them challenging to obtain.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    Made by: <br>
+    Maxim Kolodin <br>
+    Alimzhan Zhaparov <br>
+    Askar Toraliyev
+  </footer>
 </body>
 </html>

@@ -3,124 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curses in the Game</title>
+    <title>Curses</title>
+    <style>
+        * {
+            font-family: Helvetica, sans-serif;
+            color: rgb(209, 209, 209);
+        }
 
+        body {
+            background-image: url("img/Site-background-dark.webp");
+        }
+
+        .logo_text {
+            text-decoration: none;
+        }
+
+        .logo_text :hover{
+            text-decoration: dashed white;
+        }
+
+        main {
+            min-height: calc(100vh - 10px - 160px);
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        footer {
+            background-color: black;
+            margin-top: 0;
+            margin-bottom: -10px;
+            padding-bottom: 5px;
+            height: 4em;
+            text-align: center;
+        } 
+    </style>
 </head>
 <body>
+    <header class="logo">
+        <a href="index.html">
+            <img src="img/IsaacLogo.webp" alt="The Binding of Isaac:Rebirth Wiki">
+        </a>
+        <a href="index.html" class="logo_text">The Binding of Isaac:Rebirth Wiki</a>
+    </header>
 
-<h1>Curses in the Game</h1>
-<p>Every floor Isaac reaches has a chance to be cursed, which hides or alters game elements to make the floor more difficult to complete. Each curse only lasts for the current floor. The possible curses are:</p>
+    <main>
+        <section>
+            <h1>Curses in the Game</h1>
+            <p>Every floor Isaac reaches has a chance to be cursed, which hides or alters game elements to make the floor more difficult to complete. Each curse only lasts for the current floor. The possible curses are:</p>
+        </section>
 
-<div class="section">
-    <h2>Curse Descriptions</h2>
-    <table>
-        <tr>
-            <th>Curse</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Curse of the Blind</td>
-            <td>All item sprites are replaced with a question mark and are not revealed until they are picked up.</td>
-        </tr>
-        <tr>
-            <td>Curse of Darkness</td>
-            <td>The floor is much darker, and is only barely lit by Isaac's natural aura. Rooms are occasionally filled with swarms of intangible glowing particles.</td>
-        </tr>
-        <tr>
-            <td>Curse of the Lost</td>
-            <td>Removes the map from the HUD and increases the possible total room count of the current floor by 4.</td>
-        </tr>
-        <tr>
-            <td>Curse of the Maze</td>
-            <td>Entering a new room occasionally takes Isaac to the wrong room with a screen-shake and sound effect to indicate the jump.</td>
-        </tr>
-        <tr>
-            <td>Curse of the Unknown</td>
-            <td>Removes Isaac's health from the HUD, leaving the player unable to see how many hearts remain.</td>
-        </tr>
-        <tr>
-            <td>Curse of the Labyrinth</td>
-            <td>Merges two floors into an XL floor containing two Boss Rooms and counts as two floors.</td>
-        </tr>
-        <tr>
-            <td>Curse of the Cursed</td>
-            <td>Changes normal doors into cursed doors, found only in specific challenges or with certain seeds.</td>
-        </tr>
-        <tr>
-            <td>Curse of the Giant</td>
-            <td>Merges normal-sized rooms into larger rooms, but is not achievable naturally in the game.</td>
-        </tr>
-    </table>
-</div>
+        <section>
+            <h2>Curse Descriptions</h2>
+            <table>
+                <tr>
+                    <th>Curse</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><img src="img/Curses/Curse_of_the_Blind.webp" alt="Curse of the blind" title="Curse of the blind">Curse of the Blind</td>
+                    <td>All item sprites are replaced with a question mark and are not revealed until they are picked up.</td>
+                </tr>
+                <tr>
+                    <td><img src="img/Curses/Curse_of_Darkness.webp" alt="Curse of Darkness" title="Curse of Darkness">Curse of Darkness</td>
+                    <td>The floor is much darker, and is only barely lit by Isaac's natural aura. Rooms are occasionally filled with swarms of intangible glowing particles.</td>
+                </tr>
+                <tr>
+                    <td><img src="img/Curses/Curse_of_the_Lost.webp" alt="Curse of the Lost" title="Curse of the Lost">Curse of the Lost</td>
+                    <td>Removes the map from the HUD and increases the possible total room count of the current floor by 4.</td>
+                </tr>
+                <tr>
+                    <td><img src="img/Curses/Curse_of_the_Maze.webp" alt="Curse of the Maze" title="Curse of the Maze">Curse of the Maze</td>
+                    <td>Entering a new room occasionally takes Isaac to the wrong room with a screen-shake and sound effect to indicate the jump.</td>
+                </tr>
+                <tr>
+                    <td><img src="img/Curses/Curse_of_the_Unknown.webp" alt="Curse of the Unknown" title="Curse of the Unknown">Curse of the Unknown</td>
+                    <td>Removes Isaac's health from the HUD, leaving the player unable to see how many hearts remain.</td>
+                </tr>
+                <tr>
+                    <td><img src="img/Curses/Curse_of_the_Labyrinth.webp" alt="Curse of the Labyrinth" title="Curse of the Labyrinth">Curse of the Labyrinth</td>
+                    <td>Merges two floors into an XL floor containing two Boss Rooms and counts as two floors.</td>
+                </tr>
+                <tr>
+                    <td><img src="img/Curses/Curse_of_the_Cursed.webp" alt="Curse of the Cursed" title="Curse of the Cursed">Curse of the Cursed</td>
+                    <td>Changes normal doors into cursed doors, found only in specific challenges or with certain seeds.</td>
+                </tr>
+                <tr>
+                    <td><img src="img/Dlc_r_indicator.webp" alt="Added in Repentance" title="Added in Repentance"><img src="img/Curses/Curse_of_the_Giant.webp" alt="Curse of the Giant" title="Curse of the Giant">Curse of the Giant</td>
+                    <td>Merges normal-sized rooms into larger rooms, but is not achievable naturally in the game.</td>
+                </tr>
+            </table>
+        </section>
 
-<div class="section">
-    <h2>Chance of Getting a Curse</h2>
-    <p>The odds of getting a curse vary with progression, increasing over time:</p>
-    <table>
-        <tr>
-            <th>Unlocks</th>
-            <th>Normal</th>
-            <th>Hard</th>
-        </tr>
-        <tr>
-            <td>New Game</td>
-            <td>1/80</td>
-            <td>1/10</td>
-        </tr>
-        <tr>
-            <td>Killed Mom</td>
-            <td>1/30</td>
-            <td>1/5</td>
-        </tr>
-        <tr>
-            <td>Everything is Terrible</td>
-            <td>1/10</td>
-            <td>1/3</td>
-        </tr>
-        <tr>
-            <td>Killed Isaac</td>
-            <td>1/5</td>
-            <td>1/2 (Repentance) or 1/3</td>
-        </tr>
-    </table>
-</div>
+        <section>
+            <h2>Chance of Getting a Curse</h2>
+            <p>The odds of getting a curse vary with progression, increasing over time:</p>
+            <table>
+                <tr>
+                    <th>Unlocks</th>
+                    <th>Normal</th>
+                    <th>Hard</th>
+                </tr>
+                <tr>
+                    <td>New Game</td>
+                    <td>1/80</td>
+                    <td>1/10</td>
+                </tr>
+                <tr>
+                    <td>Killed Mom</td>
+                    <td>1/30</td>
+                    <td>1/5</td>
+                </tr>
+                <tr>
+                    <td>Everything is Terrible</td>
+                    <td>1/10</td>
+                    <td>1/3</td>
+                </tr>
+                <tr>
+                    <td>Killed Isaac</td>
+                    <td>1/5</td>
+                    <td><img src="img/Dlc_nr_indicator.webp" alt="Was in the base game" title="Was in the base game">1/2 or <img src="img/Dlc_r_indicator.webp" alt="Added in Repentance" title="Added in Repentance">1/3</td>
+                </tr>
+            </table>
+        </section>
 
-<div class="section">
-    <h2>Notes</h2>
-    <ul>
-        <li>Curse of the Labyrinth can spawn the same boss in both rooms on one floor.</li>
-        <li>Items that reveal the entire map do not counteract the effect of Curse of the Lost.</li>
-        <li>Curse of Darkness can be made easier by increasing the gamma setting in the game options.</li>
-    </ul>
-</div>
+        <section>
+            <h2>Notes</h2>
+            <ul>
+                <li><img src="img/Curses/Curse_of_the_Labyrinth.webp" alt="Curse of the Labyrinth" title="Curse of the Labyrinth">Curse of the Labyrinth can spawn the same boss in both rooms on one floor.</li>
+                <li>Items that reveal the entire map do not counteract the effect of <img src="img/Curses/Curse_of_the_Lost.webp" alt="Curse of the Lost" title="Curse of the Lost">Curse of the Lost.</li>
+                <li><img src="img/Curses/Curse_of_Darkness.webp" alt="Curse of Darkness" title="Curse of Darkness">Curse of Darkness can be made easier by increasing the gamma setting in the game options.</li>
+            </ul>
+        </section>
 
-<div class="section">
-    <h2>Trivia</h2>
-    <ul>
-        <li>Of the three curses that returned from *Wrath of the Lamb* (Labyrinth, Lost, and Darkness), Curse of the Lost and Curse of Darkness have different effects from Rebirth onwards.</li>
-        <li>Curse of Darkness used to hide the map, but was given the floor darkening effect in Rebirth.</li>
-        <li>Curse of the Lost used to only add 4 rooms to the total room count but was also given the map removal effect from Curse of Darkness.</li>
-        <li>Curse of the Labyrinth remained untouched.</li>
-        <li>(Repentance) Curse of the Giant originated from the Antibirth mod but cannot be encountered in-game without mods or the Debug Console.</li>
-        <li>(Repentance) There is another curse, Curse of the Mist, used internally in the game. This is active inside the Mother's Shadow area and disables Isaac's items.</li>
-    </ul>
-</div>
+        <section>
+            <h2>Trivia</h2>
+            <ul>
+                <li>Of the three curses that returned from *Wrath of the Lamb* (Labyrinth, Lost, and Darkness), <img src="img/Curses/Curse_of_the_Lost.webp" alt="Curse of the Lost" title="Curse of the Lost">Curse of the Lost and <img src="img/Curses/Curse_of_Darkness.webp" alt="Curse of Darkness" title="Curse of Darkness">Curse of Darkness have different effects from Rebirth onwards.</li>
+                <li><img src="img/Curses/Curse_of_Darkness.webp" alt="Curse of Darkness" title="Curse of Darkness">Curse of Darkness used to hide the map, but was given the floor darkening effect in Rebirth.</li>
+                <li><img src="img/Curses/Curse_of_the_Lost.webp" alt="Curse of the Lost" title="Curse of the Lost">Curse of the Lost used to only add 4 rooms to the total room count but was also given the map removal effect from <img src="img/Curses/Curse_of_Darkness.webp" alt="Curse of Darkness" title="Curse of Darkness">Curse of Darkness.</li>
+                <li><img src="img/Curses/Curse_of_the_Labyrinth.webp" alt="Curse of the Labyrinth" title="Curse of the Labyrinth">Curse of the Labyrinth remained untouched.</li>
+                <li><img src="img/Dlc_r_indicator.webp" alt="Added in Repentance" title="Added in Repentance"> Curse of the Giant originated from the Antibirth mod but cannot be encountered in-game without mods or the Debug Console.</li>
+                <li><img src="img/Dlc_r_indicator.webp" alt="Added in Repentance" title="Added in Repentance"> There is another curse, Curse of the Mist, used internally in the game. This is active inside the <img src="img/Mother's_Shadow.webp" alt="Mother's Shadow" title="Mother's Shadow">Mother's Shadow area and disables Isaac's items.</li>
+            </ul>
+        </section>
 
-<div class="section">
-    <h2>Bugs</h2>
-    <ul>
-        <li>(Repentance) Curse of the Maze can still teleport Isaac to already explored rooms.</li>
-        <li>(Repentance) The Curse of the Maze is supposed to only teleport Isaac into uncleared rooms, but there is a bug that makes it inconsistent.</li>
-        <li>(Except in Rebirth) The Curse of the Maze can teleport Isaac to the same room he was just in.</li>
-    </ul>
-</div>
+        <section>
+            <h2>Bugs</h2>
+            <ul>
+                <li> <img src="img/Dlc_r_indicator.webp" alt="Added in Repentance" title="Added in Repentance"> Curse of the Maze can still teleport Isaac to already explored rooms.</li>
+                <li><img src="img/Dlc_r_indicator.webp" alt="Added in Repentance" title="Added in Repentance"> The Curse of the Maze is supposed to only teleport Isaac into uncleared rooms, but there is a bug that makes it inconsistent.</li>
+                <li><img src="img/Dlc_nr_indicator.webp" alt="Was in the base game" title="Was in the base game"> The Curse of the Maze can teleport Isaac to the same room he was just in.</li>
+            </ul>
+        </section>
 
-<footer>
-    Made by: <br>
-    Maxim Kolodin <br>
-    Alimzhan Zhaparov <br>
-    Askar Toraliyev
-</footer>
+    </main>
+    <footer>
+        Made by: <br>
+        Maxim Kolodin <br>
+        Alimzhan Zhaparov <br>
+        Askar Toraliyev
+    </footer>
 
 </body>
 </html>
