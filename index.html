@@ -4,148 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Binding of Isaac:Rebirth Wiki</title>
-    <style>
-        * {
-            font-family: Helvetica, sans-serif;
-            color: rgb(209, 209, 209);
-        }
-
-        body {
-            background-image: url("img/Site-background-dark.webp");
-        }
-
-        .logo_text {
-            text-decoration: none;
-        }
-
-        .logo_text :hover{
-            text-decoration: dashed white;
-        }
-
-        main {
-            min-height: calc(100vh - 10px - 160px);
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-
-        footer {
-            background-color: black;
-            margin-top: 0;
-            margin-bottom: -10px;
-            padding-bottom: 5px;
-            height: 4em;
-            text-align: center;
-        } 
-    </style>
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header class="logo">
-        <a href="index.html">
-            <img src="img/IsaacLogo.webp" alt="The Binding of Isaac:Rebirth Wiki">
-        </a>
-        <a href="index.html" class="logo_text">The Binding of Isaac:Rebirth Wiki</a>
-    </header>
-    <main class="main_page">
-        <section>
-           <h1>WELCOME TO THE BINDING OF ISAAC:REBIRTH WIKI</h1>
-        </section>
-        <section>
-            <h2>CONTENT</h2>
-            <a href="#">
-                <img src="img/MainPage/Achievements.webp" alt="Achivements">
-                Achivements(TODO)
+    <div class="content">
+        <header class="logo">
+            <a href="index.html">
+                <img src="img/IsaacLogo.webp" alt="The Binding of Isaac:Rebirth Wiki">
             </a>
-            <a href="#">
-                <img src="img/MainPage/Challenges.webp" alt="Challenges">
-                Challenges(TODO)
-            </a>
-            <a href="#">
-                <img src="img/MainPage/CompletionsMarks.webp" alt="Completion Marks">
-                Completion Marks(TODO)
-            </a>
-            <a href="#">
-                <img src="img/MainPage/Items.webp" alt="Items">
-                Items(TODO)
-            </a>
-            <a href="#">
-                <img src="img/Trinkets/The_Left_Hand_icon.webp" alt="Trinkets">
-                Trinkets(TODO)
-            </a>
-            <a href="#">
-                <img src="img/Characters/Isaac_appearance.webp" alt="Characters">
-                Characters(TODO)
-            </a>
-            <a href="./chapters.html">
-                <img src="img/MainPage/Chapters.webp" alt="Chapters">
-                Chapters
-            </a>
-            <a href="#">
-                <img src="img/MainPage/Rooms.webp" alt="Rooms">
-                Rooms(TODO)
-            </a>
-            <a href="./transformations.html">
-                <img src="img/Transformations/Guppy_appearance.webp" alt="Transformations">
-                Transformations
-            </a>
-            <a href="#">
-                <img src="img/MainPage/Attr.webp" alt="Attributes">
-                Attributes(TODO)
-            </a>
-            <a href="#">
-                <img src="img/MainPage/Bosses.webp" alt="Bosses">
-                Bosses(TODO)
-            </a>
-            <a href="#">
-                <img src="img/MainPage/Monsters.webp" alt="Monsters">
-                Monsters(TODO)
-            </a>
-            <a href="#">
-                <img src="img/MainPage/Pickups.webp" alt="Pickups">
-                Pickups(TODO)
-            </a>
-            <a href="#">
-                <img src="img/Greed_Donation_Machine.webp" alt="Modes">
-                Modes(TODO)
-            </a>
-            <a href="#">
-                <img src="img/MainPage/Objects.webp" alt="Objects">
-                Objects(TODO)
-            </a>
-            <a href="#">
-                <img src="img/Effects/Confusion_Effect.webp" alt="Effects">
-                Effects(TODO)
-            </a>
-            <a href="./Curses.html">
-                <img src="img/MainPage/Curse.webp" alt="Curses">
-                Curses
-            </a>
-            <a href="./Seeds.html">
-                <img src="img/MainPage/Seeds.webp" alt="Seeds">
-                Seeds
-            </a>
-            <a href="./endings.html">
-                <img src="img/MainPage/Endings.webp" alt="Endings">
-                Endings
-            </a>
-            <a href="#">
-                <img src="img/Trinkets/Forgotten_Lullaby_icon.webp" alt="Music">
-                Music(TODO)
-            </a>
-            <a href="#">
-                <img src="img/Collectibles/The_Hourglass_icon.webp" alt="Version History">
-                Version History(TODO)
-            </a>
-            <a href="#">
-                <img src="img/Collectibles/Dataminer_icon.webp" alt="Modding">
-                Modding(TODO)
-            </a>
-        </section>
-        <section>
-            <h2>ABOUT THE GAME</h2>
-            <p>The Binding of Isaac: Rebirth is a randomly generated action RPG shooter with heavy roguelike elements. Players will accompany Isaac on a quest to escape his mother, facing off against droves of mysterious creatures, discovering secrets, and fighting fearsome bosses. Along the way, Isaac can find bizarre treasures that change his form and give him super-human abilities. But it won't be easy!
-                <br> <br>
-                Rebirth is the remake of the original game that sports a game engine that runs at 60 FPS, pixelated style artwork, polished visual effects, and a new soundtrack from Ridiculon. Oh yeah, hundreds of new rooms, synergies, and retuned enhancements by the series creator, Edmund McMillen and other developers. There are three DLCs available for Rebirth, (except in Rebirth) The Binding of Isaac: Afterbirth, (in Afterbirth † and Repentance) The Binding of Isaac: Afterbirth † and (in Repentance) The Binding of Isaac: Repentance. Did we mention the poop? </p>
-        </section>
-    </main>
+            <a href="index.html" class="logo_text">The Binding of Isaac:Rebirth Wiki</a>
+        </header>
+        <main class="main_page">
+            <h1>WELCOME TO THE BINDING OF ISAAC:REBIRTH WIKI</h1>
+            <section>
+                <h2>CONTENT</h2>
+                <ul class="gallery">
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/Achievements.webp" alt="Achivements" width="100" height="87">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Achivements(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/Challenges.webp" alt="Challenges" width="80" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Challenges(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/CompletionsMarks.webp" alt="Completion Marks" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Completion Marks(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/Items.webp" alt="Items" width="60" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Items(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/Trinkets/The_Left_Hand_icon.webp" alt="Trinkets" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Trinkets(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/Characters/Isaac_appearance.webp" alt="Characters" width="85" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Characters(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="./chapters.html">
+                                <img src="img/MainPage/Chapters.webp" alt="Chapters" width="100" height="76">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="./chapters.html">Chapters</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/Rooms.webp" alt="Rooms" width="100" height="78">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Rooms(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="./transformations.html">
+                                <img src="img/Transformations/Guppy_appearance.webp" alt="Transformations" width="86" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="./transformations.html">Transformations</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/Attr.webp" alt="Attributes" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Attributes(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/Bosses.webp" alt="Bosses" width="100" height="86">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Bosses(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/Monsters.webp" alt="Monsters" width="80" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Monsters(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/Pickups.webp" alt="Pickups" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Pickups(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/Greed_Donation_Machine.webp" alt="Modes" width="91" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Modes(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/MainPage/Objects.webp" alt="Objects" width="100" height="92">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Objects(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/Effects/Confusion_Effect.webp" alt="Effects" width="81" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Effects(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="./Curses.html">
+                                <img src="img/MainPage/Curse.webp" alt="Curses" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="./Curses.html">Curses</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="./Seeds.html">
+                                <img src="img/MainPage/Seeds.webp" alt="Seeds" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="./Seeds.html">Seeds</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="./endings.html">
+                                <img src="img/MainPage/Endings.webp" alt="Endings" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="./endings.html">Endings</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/Trinkets/Forgotten_Lullaby_icon.webp" alt="Music" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Music(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/Collectibles/The_Hourglass_icon.webp" alt="Version History" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Version History(TODO)</a></p>
+                    </li>
+                    <li class="gallerybox">
+                        <div class="galleryimage">
+                            <a href="#">
+                                <img src="img/Collectibles/Dataminer_icon.webp" alt="Modding" width="100" height="100">
+                            </a>
+                        </div>
+                        <p class="gallerytext"><a href="#">Modding(TODO)</a></p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>ABOUT THE GAME</h2>
+                <p>The Binding of Isaac: Rebirth is a randomly generated action RPG shooter with heavy roguelike elements. Players will accompany Isaac on a quest to escape his mother, facing off against droves of mysterious creatures, discovering secrets, and fighting fearsome bosses. Along the way, Isaac can find bizarre treasures that change his form and give him super-human abilities. But it won't be easy!
+                    <br> <br>
+                    Rebirth is the remake of the original game that sports a game engine that runs at 60 FPS, pixelated style artwork, polished visual effects, and a new soundtrack from Ridiculon. Oh yeah, hundreds of new rooms, synergies, and retuned enhancements by the series creator, Edmund McMillen and other developers. There are three DLCs available for Rebirth, <img src="img/Dlc_a_indicator.webp" alt="Added in Afterbirth" title="Added in Afterbirth"> The Binding of Isaac: Afterbirth, <img src="img/Dlc_a__indicator.webp" alt="Added in Afterbirth+" title="Added in Afterbirth+"> The Binding of Isaac: Afterbirth † and <img src="img/Dlc_r_indicator.webp" alt="Added in Repentance" title="Added in Repentance"> The Binding of Isaac: Repentance. Did we mention the poop? </p>
+            </section>
+        </main>
+    </div>
     <footer>
         Made by: <br>
         Maxim Kolodin <br>

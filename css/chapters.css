@@ -1,0 +1,15 @@
+.roomsBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.roomBox {
+    width: 260px;
+    height: 163px;
+    margin: 5px;
+    margin-bottom: 50px;
+    text-align: center;
+}

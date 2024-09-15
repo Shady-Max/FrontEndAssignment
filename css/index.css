@@ -1,0 +1,33 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content:center;
+}
+
+.gallerybox {
+    width: 135px;
+}
+
+.gallerytext {
+    font-size: 12px;
+    text-align: center;
+}
+
+.galleryimage {
+    width: 100px;
+    height: 100px;
+    background-color: #53372db9;
+    padding: 10px;
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+
+.galleryimage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
