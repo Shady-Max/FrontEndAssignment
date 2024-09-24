@@ -7,20 +7,6 @@ body {
     background-image: url("../img/Site-background-dark.webp");
 }
 
-a {
-    color: #ffa62ae3;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-.content {
-    width: 70%;
-    margin: auto;
-}
-
 main {
     min-height: calc(100vh - 10px - 160px);
     background-color: #603829;
@@ -31,19 +17,21 @@ main {
     padding: 8px 12px;
 }
 
+a {
+    color: #ffa62ae3;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 footer {
     background-color: black;
-    margin-top: 0;
-    margin-bottom: -10px;
-    padding-bottom: 5px;
-    height: 4em;
-    text-align: center;
-} 
+}
 
-.logo_text {
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
+footer .container {
+    text-align: center;
 }
 
 section {
@@ -53,9 +41,19 @@ section {
 section::before {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 35px;
     left: 0;
     right: 0;
     height: 2px;
     background-color: #5c160c;
+}
+
+.logo_text {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.397);
 }

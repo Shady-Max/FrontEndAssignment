@@ -18,7 +18,7 @@ th, td {
 }
 
 td img {
-    width: 50px; /* Adjust as needed */
+    width: 20px;
     height: auto;
     border-radius: 5px;
 }
@@ -28,7 +28,7 @@ tr:hover {
 }
 
 strong {
-    color: #8B4513; /* Emphasize DLC text */
+    color: #8B4513;
 }
 
 @media (max-width: 600px) {
@@ -38,6 +38,6 @@ strong {
     }
     
     td img {
-        width: 40px; /* Smaller images for mobile */
+        width: 40px;
     }
 }
