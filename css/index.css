@@ -21,3 +21,37 @@
     display: block;
     margin: auto;
 }
+
+.faq-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background-color: #ffd00010;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #b398002d;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0 15px;
+    background-color: #0002035d;
+}
+
+.faq-answer p {
+    padding: 15px 0;
+}

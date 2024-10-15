@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/faq.js"></script>
 </head>
 <body>
     <div class="container">
-        <header class="logo">
-            <a href="index.html">
-                <img src="img/IsaacLogo.webp" alt="The Binding of Isaac:Rebirth Wiki">
-            </a>
-            <a href="index.html" class="logo_text">The Binding of Isaac:Rebirth Wiki</a>
-        </header>
+        <div class="row justify-content-around">
+            <header class="logo col-11">
+                <a href="index.html">
+                    <img src="img/IsaacLogo.webp" alt="The Binding of Isaac:Rebirth Wiki">
+                </a>
+                <a href="index.html" class="logo_text">The Binding of Isaac:Rebirth Wiki</a>
+            </header>
+            <a class="col-1" href="./register.html">register</a>
+        </div>
         <main class="main_page">
             <h1>WELCOME TO THE BINDING OF ISAAC:REBIRTH WIKI</h1>
             <section>
@@ -27,7 +32,7 @@
                                 <img src="img/MainPage/Achievements.webp" alt="Achivements" width="100" height="87">
                             </a>
                         </div>
-                        <p class="gallerytext"><a href="#">Achivements(TODO)</a></p>
+                        <p class="gallerytext"><button class="btn btn-link modal-trigger text-dark">Achievements</button> <!--- <a href="#">Achivements(TODO)</a> --></p>
                     </div>
                     <div class=" gallerybox col-lg-1 col-sm-3">
                         <div class="galleryimage">
@@ -211,6 +216,48 @@
                     <br> <br>
                     Rebirth is the remake of the original game that sports a game engine that runs at 60 FPS, pixelated style artwork, polished visual effects, and a new soundtrack from Ridiculon. Oh yeah, hundreds of new rooms, synergies, and retuned enhancements by the series creator, Edmund McMillen and other developers. There are three DLCs available for Rebirth, <img src="img/Dlc_a_indicator.webp" alt="Added in Afterbirth" title="Added in Afterbirth"> The Binding of Isaac: Afterbirth, <img src="img/Dlc_a__indicator.webp" alt="Added in Afterbirth+" title="Added in Afterbirth+"> The Binding of Isaac: Afterbirth † and <img src="img/Dlc_r_indicator.webp" alt="Added in Repentance" title="Added in Repentance"> The Binding of Isaac: Repentance. Did we mention the poop? </p>
             </section>
+            <section>
+                <h2>FAQ</h2>
+                <div class="faq-section">
+                    <div class="faq">
+                        <h3 class="faq-question">How can i find banned items in seeds?</h3>
+                        <div class="faq-answer">
+                            <p>You can go on seeds page to see all banned items for this seed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-question">How can i see all floors?</h3>
+                        <div class="faq-answer">
+                            <p>You can find them in chapters page.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-question">What bum transformation does?</h3>
+                        <div class="faq-answer">
+                            <p>You can find it in transformation page.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="modal fade" id="NotAvailableModal" tabindex="-1" aria-labelledby="NotAvailableModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-dark" id="NotAvailableModalLabel">That content is not available for now</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <span class="text-dark">You can come back later to see if it works now</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <h2>Date and Time</h2>
+                <p id="dateTime" class="fs-4"></p>
+            </section>
         </main>
     </div>
     <footer class="footer">
@@ -221,5 +268,7 @@
         Askar Toraliyev</span>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/time.js"></script>
 </body>
 </html>
