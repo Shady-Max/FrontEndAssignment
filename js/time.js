@@ -4,9 +4,9 @@ function formatAMPM(date) {
     let seconds = date.getSeconds();
     let ampm = hours >= 12 ? 'PM' : 'AM';
     hours = hours % 12;
-    hours = hours ? hours : 12; // The hour '0' should be '12'
-    minutes = minutes < 10 ? '0' + minutes : minutes; // Add leading zero to minutes if needed
-    seconds = seconds < 10 ? '0' + seconds : seconds; // Add leading zero to seconds if needed
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
     return hours + ':' + minutes + ':' + seconds + ' ' + ampm;
 }
 
