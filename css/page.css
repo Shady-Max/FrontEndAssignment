@@ -1,6 +1,12 @@
 * {
     font-family: Helvetica, sans-serif;
     color: rgb(209, 209, 209);
+    transition: color 1.5s ease;
+    transition: background-color 1.5s ease;
+}
+
+body.light-theme * {
+    color: black;
 }
 
 body {
@@ -17,17 +23,38 @@ main {
     padding: 8px 12px;
 }
 
-a {
+body.dark-theme a {
     color: #ffa62ae3;
     text-decoration: none;
+}
+
+body.light-theme a {
+    color: black;
+}
+
+button.modal-trigger {
+    color: #ffa62ae3;
+    font-size: 14px;
+}
+
+body.light-theme button.modal-trigger {
+    color: black;
+}
+
+body.light-theme main {
+    background-color: #ca7454;
 }
 
 a:hover{
     text-decoration: underline;
 }
 
-footer {
+body.dark-theme footer {
     background-color: black;
+}
+
+body.light-theme footer {
+    background-color: rgb(209, 209, 209);
 }
 
 footer .container {
