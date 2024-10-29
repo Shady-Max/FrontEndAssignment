@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/table.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/filter.js"></script>
+</head>
+<body onload="loadFilters()">
+    <div class="container">
+        <div class="row justify-content-around">
+            <header class="logo col-11">
+                <a href="index.html">
+                    <img src="img/IsaacLogo.webp" alt="The Binding of Isaac:Rebirth Wiki">
+                </a>
+                <a href="index.html" class="logo_text">The Binding of Isaac:Rebirth Wiki</a>
+            </header>
+            <a class="col-1" href="./register.html">register</a>
+        </div>
+        <main class="main_page">
+            <section>
+                <h1>Items</h1>
+                <p>
+                    ltems are an integral part of the gameplay of The Binding of Isaac: Rebirth. They modify Isaac's attributes, grant or modify tear effects, and much more. <br>
+                    Items are classified into several distinct types and groups. Some items are passive, which add an effect permanently to Isaac, while others only activate when used. <br>
+                </p>
+                <ul>
+                    <li>The original The Binding of Isaac had 196 items.</li>
+                    <li><img src="img/Dlc_nr_indicator.webp" alt="In Rebirth" title="In Rebirth"> Rebirth has a total of 341 items.</li>
+                    <li><img src="img/Dlc_a_indicator.webp" alt="Added in afterbirth" title="Added in afterbirth"> Afterbirth added 95 new items, for a total of 436 items.</li>
+                    <li><img src="img/Dlc_a__indicator.webp" alt="in Afterbirth† and Repentance" title="in Afterbirth† and Repentance"> Afterbirth† added 111 new items, for a total of 547 items.</li>
+                    <li><img src="img/Dlc_r_indicator.webp" alt="in Repentance" title="in Repentance"> Repentance added 169 new items, for a total of 716 items. An update for Repentance, V1.7.5, added 3 new items, for a total of 719 items.</li>
+                </ul>
+                <p>
+                    In Afterbirth † and prior, 13 items are considered special and will be less likely to appear if the player has already come across other special items. The Repentance expansion removed the Special Item mechanic, replacing it with the item weight and item quality mechanics. <br>
+                    For a list of which items can potentially appear in a given special room or under certain conditions, see item pool and Item Tags. <br>
+                    For the grids of items that appear in the stats menu, see Collection Page. <br>
+                    Not to be confused with cards and runes, pills, and trinkets. <br>
+                </p>
+            </section>
+            <section>
+                <h2>Filters</h2>
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Filter by Quality</label>
+                        <div>
+                            <input type="checkbox" id="quality1" value="1" onclick="applyFilters()"> <label for="quality1">Quality 1</label><br>
+                            <input type="checkbox" id="quality2" value="2" onclick="applyFilters()"> <label for="quality2">Quality 2</label><br>
+                            <input type="checkbox" id="quality3" value="3" onclick="applyFilters()"> <label for="quality3">Quality 3</label><br>
+                            <input type="checkbox" id="quality4" value="4" onclick="applyFilters()"> <label for="quality4">Quality 4</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Filter by DLC</label>
+                        <div>
+                            <input type="checkbox" id="dlcRebirth" value="Rebirth" onclick="applyFilters()"> <label for="dlcRebirth">Rebirth</label><br>
+                            <input type="checkbox" id="dlcAfterbirth" value="Afterbirth" onclick="applyFilters()"> <label for="dlcAfterbirth">Afterbirth</label><br>
+                            <input type="checkbox" id="dlcAfterbirthPlus" value="Afterbirth+" onclick="applyFilters()"> <label for="dlcAfterbirthPlus">Afterbirth+</label><br>
+                            <input type="checkbox" id="dlcRepentance" value="Repentance" onclick="applyFilters()"> <label for="dlcRepentance">Repentance</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Actived Collectibles</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Icon</th>
+                            <th>Quote</th>
+                            <th>Description</th>
+                            <th>Quality</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemsTable">
+                        <tr  data-quality="2" data-dlc="Rebirth">
+                            <td>A Pony</td>
+                            <td>5.100.130</td>
+                            <td><img src="" alt=""></td>
+                            <td>Flight + dash attack</td>
+                            <td>Passively grants flight and increases speed to 1.5. Upon use, Isaac charges in the direction the pony is facing, giving invulnerability during the charge and dealing damage to enemies hit. </td>
+                            <td>2</td>
+                        </tr>
+                        <tr data-quality="1" data-dlc="Rebirth">
+                            <td>Anarchist Cookbook</td>
+                            <td>5.100.65</td>
+                            <td><img src="" alt=""></td>
+                            <td>Summon bombs</td>
+                            <td>Spawns six Troll Bombs around the room. </td>
+                            <td>1</td>
+                        </tr>
+                        <tr data-quality="1" data-dlc="Afterbirth">
+                            <td><img src="./img/Dlc_a_indicator.webp" alt="Added in Afterbirth">Box of Friends</td>
+                            <td>5.100.357</td>
+                            <td><img src="" alt=""></td>
+                            <td>Double your friends</td>
+                            <td>Duplicates all of Isaac's familiars for the current room. If Isaac has no familiars, spawns a Demon Baby for the room instead. </td>
+                            <td>1</td>
+                        </tr>
+                        <tr data-quality="1" data-dlc="Afterbirth">
+                            <td><img src="./img/Dlc_a_indicator.webp" alt="Added in Afterbirth">D12</td>
+                            <td>5.100.386</td>
+                            <td><img src="" alt=""></td>
+                            <td>Rerolls rocks</td>
+                            <td><img src="./img/Dlc_nr_indicator.webp" alt="except in Repentance"> Re-rolls all Rocks and Metal Blocks in the current room into other random obstacles. <br>
+                                <img src="./img/Dlc_r_indicator.webp" alt="added in Repentance"> Re-rolls most types of Obstacles in the current room into other random obstacles. </td>
+                            <td>1</td>
+                        </tr>
+                        <tr data-quality="1" data-dlc="Afterbirth+">
+                            <td><img src="./img/Dlc_a__indicator.webp" alt="Added in Afterbirth+">Black Hole</td>
+                            <td>5.100.512</td>
+                            <td><img src="" alt=""></td>
+                            <td>Nothing can escape</td>
+                            <td>Throws a black hole on the ground which sucks in and damages enemies and destroys nearby obstacles.</td>
+                            <td>1</td>
+                        </tr>
+                        <tr data-quality="4" data-dlc="Afterbirth+">
+                            <td><img src="./img/Dlc_a__indicator.webp" alt="Added in Afterbirth+">Void</td>
+                            <td>5.100.477</td>
+                            <td><img src="" alt=""></td>
+                            <td>Consume</td>
+                            <td>Consumes all pedestal items in the room. Active items will have their effects added to Void, and passive items will grant random stat upgrades. </td>
+                            <td>4</td>
+                        </tr>
+                        <tr data-quality="4" data-dlc="Repentance">
+                            <td><img src="./img/Dlc_r_indicator.webp" alt="Added in Repentance">Abyss</td>
+                            <td>5.100.706</td>
+                            <td><img src="" alt=""></td>
+                            <td>Come forth from the depths</td>
+                            <td>Destroys all items in the room and gives Isaac a unique locust familiar for each item destroyed. Some items generate locusts with special effects. </td>
+                            <td>4</td>
+                        </tr>
+                        <tr data-quality="1" data-dlc="Repentance">
+                            <td><img src="./img/Dlc_r_indicator.webp" alt="Added in Repentance">Golden Razor</td>
+                            <td>5.100.555</td>
+                            <td><img src="" alt=""></td>
+                            <td>Pain from gain</td>
+                            <td>Spends five Pennies to increase Isaac's damage by 1.2 for the current room.  </td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <span>Made by: <br>
+            Maxim Kolodin <br>
+            Alimzhan Zhaparov <br>
+            Askar Toraliyev</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

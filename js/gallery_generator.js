@@ -2,7 +2,7 @@ const data = [
     { imgSrc: "img/MainPage/Achievements.webp", alt: "Achievements", width: 100, height: 87, text: "Achievements", href: "#" },
     { imgSrc: "img/MainPage/Challenges.webp", alt: "Challenges", width: 80, height: 100, text: "Challenges", href: "#" },
     { imgSrc: "img/MainPage/CompletionsMarks.webp", alt: "Completion Marks", width: 100, height: 100, text: "Completion Marks", href: "#" },
-    { imgSrc: "img/MainPage/Items.webp", alt: "Items", width: 60, height: 100, text: "Items", href: "#" },
+    { imgSrc: "img/MainPage/Items.webp", alt: "Items", width: 60, height: 100, text: "Items", href: "./items.html" },
     { imgSrc: "img/Trinkets/The_Left_Hand_icon.webp", alt: "Trinkets", width: 100, height: 100, text: "Trinkets", href: "#" },
     { imgSrc: "img/Characters/Isaac_appearance.webp", alt: "Characters", width: 85, height: 100, text: "Characters", href: "#" },
     { imgSrc: "img/MainPage/Chapters.webp", alt: "Chapters", width: 100, height: 76, text: "Chapters", href: "./chapters.html" },
