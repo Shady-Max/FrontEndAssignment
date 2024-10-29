@@ -7,10 +7,12 @@
 
 body.light-theme * {
     color: black;
+    transition: color 1.5s ease;
 }
 
 body {
     background-image: url("../img/Site-background-dark.webp");
+    transition: color 1.5s ease;
 }
 
 main {
@@ -23,7 +25,7 @@ main {
     padding: 8px 12px;
 }
 
-body.dark-theme a {
+body a {
     color: #ffa62ae3;
     text-decoration: none;
 }
@@ -49,7 +51,7 @@ a:hover{
     text-decoration: underline;
 }
 
-body.dark-theme footer {
+body footer {
     background-color: black;
 }
 
