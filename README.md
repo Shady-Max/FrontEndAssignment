@@ -25,7 +25,7 @@ Welcome to **The Binding of Isaac: Rebirth Wiki** project! This wiki aims to pro
 - **Key Feature:** 
   - Simple email and password check
   - Simple authentication
-<br> ![img.png](img.png)
+<br> ![img.png](README_files/img_14.png)
 
 ### 4. Transformations Page (`transformations.html`)
 - **Description:** This page provides detailed information about various transformations available in the game.
