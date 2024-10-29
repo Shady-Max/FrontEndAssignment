@@ -1,7 +1,7 @@
 const themeToggleButton = document.getElementById('theme-toggle');
 const body = document.body;
 
-let theme = localStorage.getItem('theme') || 'dark-theme';
+let theme = localStorage.getItem('theme') || 'light-theme';
 body.classList.add(theme);
 
 themeToggleButton.textContent = theme === 'light-theme' ? 'Switch to Dark Theme' : 'Switch to Light Theme';
