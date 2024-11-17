@@ -11,12 +11,12 @@ async function updateColumnById() {
   
       console.log(apiData);
       
-      const dataMap = new Map();
+      const dataMap = new Map(); 
       apiData.achivementpercentages.forEach(item => {
         dataMap.set(item.name, item.percent);
       });
 
-      console.log(dataMap)
+      console.log(dataMap) 
         /*
       // Select all rows in the table body
       const tableRows = document.querySelectorAll('#data-table tbody tr');
