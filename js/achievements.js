@@ -17,22 +17,19 @@ async function updateColumnById() {
       });
 
       console.log(dataMap) 
-        /*
-      // Select all rows in the table body
+    
       const tableRows = document.querySelectorAll('#data-table tbody tr');
   
-      // Iterate over rows to update the "Quality" column
       tableRows.forEach(row => {
-        const inGameId = row.cells[0].textContent.trim(); // Get ID from the first column
-        const quality = dataMap.get(parseInt(inGameId, 10)); // Lookup quality using the ID
+        const inGameId = row.cells[4].textContent.trim();
+        const unlocked = dataMap.get(parseFloat(inGameId));
   
-        if (quality !== undefined) {
-          row.cells[2].textContent = quality; // Update the "Quality" column (third column)
+        if (unlocked !== undefined) {
+          row.cells[5].textContent = unlocked; 
         } else {
-          row.cells[2].textContent = 'N/A'; // Fallback if no data found
+          row.cells[5].textContent = 'N/A';
         }
       });
-      */
     } catch (error) {
       console.error('Error fetching or updating table:', error);
     }
