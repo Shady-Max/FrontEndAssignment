@@ -30,7 +30,7 @@ async function updateColumnById() {
   
 function updateTable(table, dataMap){
 
-    const rows = document.querySelectorAll('#data-table tbody tr');
+    const rows = table.querySelectorAll('tbody tr');
   
     rows.forEach(row => {
         const inGameId = row.cells[4].textContent.trim();
