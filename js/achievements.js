@@ -1,6 +1,6 @@
 async function updateColumnById() {
-    const apiUrl = 'https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=250900&format=json'; // local data becouse of CORS error we can only do that on backend with node.js or something else 
-    //   api/api.steampowered.com-achievements.json
+    const apiUrl = 'api/api.steampowered.com-achievements.json'; // local data becouse of CORS error we can only do that on backend with node.js or something else 
+    // https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=250900&format=json
   
     try {
       const response = await fetch(apiUrl);
