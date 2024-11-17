@@ -18,9 +18,21 @@ async function updateColumnById() {
 
       console.log(dataMap) 
     
-      const tableRows = document.querySelectorAll('#data-table tbody tr');
+      for (let i = 1; i <= 4; i++) {
+        const table = document.getElementById(`table-${i}`);
+        updateTable(table, dataMap);
+      }
+      
+    } catch (error) {
+      console.error('Error fetching or updating table:', error);
+    }
+}
   
-      tableRows.forEach(row => {
+function updateTable(table, dataMap){
+
+    const rows = document.querySelectorAll('#data-table tbody tr');
+  
+    rows.forEach(row => {
         const inGameId = row.cells[4].textContent.trim();
         const unlocked = dataMap.get(parseFloat(inGameId));
   
@@ -29,10 +41,6 @@ async function updateColumnById() {
         } else {
           row.cells[5].textContent = 'N/A';
         }
-      });
-    } catch (error) {
-      console.error('Error fetching or updating table:', error);
-    }
+    });
 }
-  
 document.addEventListener('DOMContentLoaded', updateColumnById);
