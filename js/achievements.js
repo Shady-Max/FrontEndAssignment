@@ -10,12 +10,14 @@ async function updateColumnById() {
       const apiData = await response.json();
   
       console.log(apiData);
-      /*
+      
       const dataMap = new Map();
-      apiData.forEach(item => {
-        dataMap.set(item.id, item.quality); // Assuming API returns "id" and "quality"
+      apiData.achivementpercentages.forEach(item => {
+        dataMap.set(item.name, item.percent);
       });
-  
+
+      console.log(dataMap)
+        /*
       // Select all rows in the table body
       const tableRows = document.querySelectorAll('#data-table tbody tr');
   
