@@ -34,7 +34,7 @@ function updateTable(table, dataMap){
   
     rows.forEach(row => {
         const inGameId = row.cells[4].textContent.trim();
-        const unlocked = dataMap.get(parseFloat(inGameId));
+        const unlocked = dataMap.get(inGameId);
   
         if (unlocked !== undefined) {
           row.cells[5].textContent = unlocked; 
