@@ -12,7 +12,7 @@ async function updateColumnById() {
       console.log(apiData);
       
       const dataMap = new Map(); 
-      apiData.achivementpercentages.forEach(item => {
+      apiData.achievementpercentages.achievements.forEach(item => {
         dataMap.set(item.name, item.percent);
       });
 
