@@ -1,5 +1,5 @@
 const data = [
-    { imgSrc: "img/MainPage/Achievements.webp", alt: "Achievements", width: 100, height: 87, text: "Achievements", href: "#" },
+    { imgSrc: "img/MainPage/Achievements.webp", alt: "Achievements", width: 100, height: 87, text: "Achievements", href: "./achievements.html" },
     { imgSrc: "img/MainPage/Challenges.webp", alt: "Challenges", width: 80, height: 100, text: "Challenges", href: "#" },
     { imgSrc: "img/MainPage/CompletionsMarks.webp", alt: "Completion Marks", width: 100, height: 100, text: "Completion Marks", href: "#" },
     { imgSrc: "img/MainPage/Items.webp", alt: "Items", width: 60, height: 100, text: "Items", href: "./items.html" },
