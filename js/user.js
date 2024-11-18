@@ -3,7 +3,7 @@
 const userSection = document.getElementById("user-section");
 console.log(user);
 if (user) {
-    userData = getUser(email)
+    userData = getUser(user)
     if (userData === null) {
         userSection.innerHTML = `
         <a class="col-1" href="./login.html">login</a>
