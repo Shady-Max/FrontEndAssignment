@@ -13,7 +13,7 @@
         form_errors.innerText = "";
         localStorage.setItem("user", user.email);
         setTimeout(() => {
-            window.location.href = "index.html";
+            window.location.href = "profile.html";
         }, 2000);
     } else {
         form_errors.innerText = "Invalid email or password";

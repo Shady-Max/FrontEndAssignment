@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/page.css">
-    <script src="js/register.js"></script>
-    <title>Register</title>
-    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    <script src="js/profile.js"></script>
 </head>
 <body>
     <div class="container">
@@ -21,24 +21,17 @@
             <div id="user-section" class="col-3"></div>
         </div>
         <main class="main_page">
-                <span>Name:</span> <br>
-                <input class="text-black" type="text" name="name" id="name" required> <br>
-                <span>Email:</span> <br>
-                <input class="text-black" type="email" name="email" id="email" required> <br>
-                <span>Password: </span> <br>
-                <input class="text-black" type="password" name="password" id="password" required> <br>
-                <button type="button" onclick="register()" class="btn btn-light my-3">Register</button>
-                <div id="form-errors"></div>
-                <div id="form-success"></div>
+            <div id="user-data">
+            </div>
         </main>
     </div>
     <footer class="footer">
         <div class="container">
             <span>Made by: <br>
-        Maxim Kolodin <br>
-        Alimzhan Zhaparov <br>
-        Askar Toraliyev</span> <br>
-        <span>This website supports <button type="button" id="theme-toggle" class="btn btn-link">Dark Theme</button></span>
+                Maxim Kolodin <br>
+                Alimzhan Zhaparov <br>
+                Askar Toraliyev</span> <br>
+            <span>This website supports <button type="button" id="theme-toggle" class="btn btn-link">Dark Theme</button></span>
         </div>
     </footer>
     <script src="./js/light_dark_scheme.js"></script>

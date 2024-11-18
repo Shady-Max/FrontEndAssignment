@@ -11,12 +11,15 @@
 </head>
 <body>
     <div class="container">
-        <header class="logo">
-            <a href="index.html">
-                <img src="img/IsaacLogo.webp" alt="The Binding of Isaac:Rebirth Wiki">
-            </a>
-            <a href="index.html" class="logo_text">The Binding of Isaac:Rebirth Wiki</a>
-        </header>
+        <div class="row justify-content-around">
+            <header class="logo col-9">
+                <a href="index.html">
+                    <img src="img/IsaacLogo.webp" alt="The Binding of Isaac:Rebirth Wiki">
+                </a>
+                <a href="index.html" class="logo_text">The Binding of Isaac:Rebirth Wiki</a>
+            </header>
+            <div id="user-section" class="col-3"></div>
+        </div>
         <main>
             <h1>Understanding Game Seeds</h1>
             <p>In many games, randomness plays a major role in the player's experience. <strong>Seeds</strong> are essentially random strings of characters that are used as the foundation for most decisions made by the game's algorithms. By using the same seed, players can recreate the same experiences, even though the game might appear to be random at first glance.</p>
@@ -754,6 +757,6 @@
         </div>
     </footer>
     <script src="./js/light_dark_scheme.js"></script>
-
+    <script src="./js/user.js"></script>
 </body>
 </html>
