@@ -96,3 +96,13 @@ section::before {
 body.light-theme #theme-toggle {
     color: black;
 }
+
+.scale {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.scale:hover {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+}
