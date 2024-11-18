@@ -3,18 +3,50 @@
 const userSection = document.getElementById("user-section");
 console.log(user);
 if (user) {
-    userSection.innerHTML = `
-        <span>Welcome ${user}!</span>
-        <a href="#" id="logout">Logout</a>
+    userData = getUser(email)
+    if (userData === null) {
+        userSection.innerHTML = `
+        <a class="col-1" href="./login.html">login</a>
+        <a class="col-1" href="./register.html">register</a>
     `;
+    } else {
+        userSection.innerHTML = `
+            <span>Welcome ${userData.name}!</span>
+            <a href="#" id="logout">Logout</a>
+        `;
 
-    document.getElementById("logout").addEventListener("click", () => {
-        localStorage.removeItem("user");
-        window.location.reload();
-    });
+        document.getElementById("logout").addEventListener("click", () => {
+            localStorage.removeItem("user");
+            window.location.reload();
+        });
+    }
+    
 } else {
     userSection.innerHTML = `
         <a class="col-1" href="./login.html">login</a>
         <a class="col-1" href="./register.html">register</a>
     `;
+}
+
+
+function getUser(email) {
+    json = localStorage.getItem("users")
+    email = localStorage.getItem("user")
+    if (json == null) {
+        json = {
+            users: [
+                {name:"admin", email: "admin@admin.com", password: "admin"},
+                {name:"user", email:"user@user.com", password: "user"}
+            ]
+        };
+        json = JSON.stringify(json)
+        localStorage.setItem("users", json)
+    }
+    json = JSON.parse(json)
+    for (var i=0; i<json.users.length; i++) {
+        if (json.users[i].email === email) {
+            return json.users[i];
+        }
+    };
+    return null;
 }

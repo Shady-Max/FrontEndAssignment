@@ -1,13 +1,44 @@
 function register() {
+    var name = document.getElementById("name").value
     var email = document.getElementById("email").value
     var password = document.getElementById("password").value
     var form_errors = document.getElementById("form-errors")
     var form_success = document.getElementById("form-success")
-    if (validateEmail(email) && isStrongPassword(password)) {
+    if (!isUserExists(email) && validateEmail(email) && isStrongPassword(password)) {
+        json = localStorage.getItem("users")
+        json = JSON.parse(json)
+        json.users.push({name:name, email:email, password: password})
+        json = JSON.stringify(json);
+        localStorage.setItem("users", json);
         form_errors.innerText = ""
         form_success.innerText = "Registered successfully"
+        setTimeout(() => {
+            window.location.href = "login.html";
+        }, 1000);
     }
+}
 
+function isUserExists(email) {
+    var error = document.getElementById("form-errors")
+    json = localStorage.getItem("users")
+    if (json == null) {
+        json = {
+            users: [
+                {name:"admin", email: "admin@admin.com", password: "admin"},
+                {name:"user", email:"user@user.com", password: "user"}
+            ]
+        };
+        json = JSON.stringify(json)
+        localStorage.setItem("users", json)
+    }
+    json = JSON.parse(json)
+    for (var i=0; i<json.users.length; i++) {
+        if (json.users[i].email === email) {
+            error.innerText = "User with this email already exists"
+            return true;
+        }
+    };
+    return false;
 }
 
 function validateEmail(email) {

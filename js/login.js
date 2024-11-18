@@ -6,18 +6,12 @@
 
     console.log(localStorage.getItem("user"))
 
-    if (email === "admin@admin.com" || password === "admin") {
-        form_success.innerText = "Welcome Admin User!"
+    user = getUser(email, password)
+
+    if (user != null) {
+        form_success.innerText = `Welcome ${user.name}!`
         form_errors.innerText = "";
-        localStorage.setItem("user", "admin@admin.com");
-        setTimeout(() => {
-            window.location.href = "index.html";
-        }, 2000);
-    }
-    else if (email === "user@user.com" || password === "user") {
-        form_success.innerText = "Welcome User!";
-        form_errors.innerText = "";
-        localStorage.setItem("user", "user@user.com");
+        localStorage.setItem("user", user.email);
         setTimeout(() => {
             window.location.href = "index.html";
         }, 2000);
@@ -26,4 +20,25 @@
     }
 
     console.log(localStorage.getItem("user"))
+}
+
+function getUser(email, password) {
+    json = localStorage.getItem("users")
+    if (json == null) {
+        json = {
+            users: [
+                {name:"admin", email: "admin@admin.com", password: "admin"},
+                {name:"user", email:"user@user.com", password: "user"}
+            ]
+        };
+        json = JSON.stringify(json)
+        localStorage.setItem("users", json)
+    }
+    json = JSON.parse(json)
+    for (var i=0; i<json.users.length; i++) {
+        if (json.users[i].email === email && json.users[i].password === password) {
+            return json.users[i];
+        }
+    };
+    return null;
 }
