@@ -40,6 +40,7 @@ const data = [
         anchorOrButton.textContent = item.text;
 
         const img = document.createElement("img");
+        img.setAttribute("loading","lazy")
         img.src = item.imgSrc;
         img.alt = item.alt;
         img.width = item.width;
