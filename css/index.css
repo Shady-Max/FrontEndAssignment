@@ -2,9 +2,23 @@
     width: 135px;
 }
 
-.gallerytext {
-    font-size: 12px;
+.gallerytext{
+    font-size: 14px;
     text-align: center;
+    display: table;
+    width: 100%;
+    height: 35px;
+    text-decoration: underline #ffa62ae3;
+}
+
+.gallerytext a {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.gallerytext a:hover {
+    color: #1558ca;
+    transition: color 0.25s;
 }
 
 .galleryimage {
@@ -16,6 +30,8 @@
     display: flex;
     margin: auto;
 }
+
+
 
 .galleryimage img {
     display: block;

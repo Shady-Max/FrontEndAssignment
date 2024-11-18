@@ -86,3 +86,13 @@ section::before {
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.397);
 }
+
+#theme-toggle {
+    margin: 0px;
+    padding: 0px;
+    color: #ffa62ae3; 
+}
+
+body.light-theme #theme-toggle {
+    color: black;
+}
